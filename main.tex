@@ -1,0 +1,188 @@
+\documentclass[10pt,a4paper,hidelinks]{article}
+\usepackage[a4paper,margin=0.75in]{geometry}
+\usepackage{mdwlist}
+\usepackage{textcomp}
+\usepackage{tgpagella}
+\usepackage{hyperref}
+\usepackage{setspace}
+\usepackage{enumitem}
+\usepackage{fontawesome}
+\usepackage{xcolor}
+
+% Font %
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\pagestyle{empty}
+
+% indent section style
+\newenvironment{indentsection}[1]%
+{\begin{list}{}%
+	{\setlength{\leftmargin}{#1}}%
+	\item[]%
+}
+{\end{list}}
+
+% opposite of above
+\newenvironment{unindentsection}[1]%
+{\begin{list}{}%
+	{\setlength{\leftmargin}{-0.5#1}}%
+	\item[]%
+}
+{\end{list}}
+
+% format two pieces of text, one left aligned and one right aligned
+\newcommand{\headerrow}[2]
+{\begin{tabular*}{\linewidth}{l@{\extracolsep{\fill}}r}
+	#1 &
+	#2 \\
+\end{tabular*}}
+
+% Colors
+\definecolor{IFDarkGreen}{HTML}{40916C}
+\definecolor{IFMediumGreen}{HTML}{74C69D}
+\definecolor{IFLightGreen}{HTML}{B7E4C7}
+
+\begin{document}
+
+\begin{center}
+\setstretch{1.2}{
+{\huge \textbf{Tommaso Manzana}}
+
++39 3518881347\ \ \textbullet
+\ \ manzana.tommaso@gmail.com 
+
+\href{https://github.com/TommasoManzana}{github.com/TommasoManzana} \ \textbullet
+\ \ \href{https://www.linkedin.com/in/tommaso-manzana/}{linkedin.com/in/tommaso-manzana}
+\\
+}
+\end{center}
+
+
+{\color{IFMediumGreen} \hrule}
+\vspace{-0.3em}
+{\color{IFDarkGreen}\section*{Experience}}
+
+
+\renewcommand{\labelitemi}{$\bullet$}
+% \renewcommand\labelitemii{$\--$}
+
+\begin{itemize}
+    \setlength\itemsep{5pt}
+	\parskip=0.1em
+
+	\item
+	\headerrow
+		{{\href{http://www.provinz.bz.it/politik-recht-aussenbeziehungen/europa/eu-foerderungen/efre-2014-2020.asp}{\textbf{FESR Project}}}}
+		{\textbf{\colorbox{IFLightGreen!30}{\href{https://www.saidea.it/}{\textbf{Saidea}}}{, Trento}}}
+	\\
+	\headerrow
+		{\emph{Jan 2021 -- Apr 2021}}
+		{\emph{}}
+	% TODO rewrite this
+	\begin{itemize*}
+	    \setlength\itemsep{2pt}
+		\item Implemented a \textbf{Python} script in order to manage 'Tickets' on Antares (local company Database)
+		\item Implemented a second script in \textbf{PHP} to get solar panels data out of an Excel and load relationships onto a local database (API)
+	\end{itemize*}
+
+\end{itemize}
+
+
+% --------------- Projects ---------------
+
+{\color{IFMediumGreen} \hrule}
+\vspace{-0.3em}
+{\color{IFDarkGreen}\section*{Projects}}
+
+	\begin{itemize}
+ 	\parskip=0.1em
+
+ 	\item
+	\headerrow
+		{\textbf{FST App}}
+		{\href{https://falconeriskiteam.net/}{\textbf{Falconeri Ski Team}}}
+	\\
+	\headerrow
+	    {\emph{Nov 2019 -- Present}}
+		{\emph{}}
+	\begin{itemize*}
+	    \setlength\itemsep{2pt}
+	    \item Worked as a freelancer with a college partner to develop a mobile application, using the {\href{https://ionicframework.com/}{\textbf{Ionic}}} framework
+	    \item The front-end was implemented in \textbf{Angular} while for the back-end Google's {\href{https://firebase.google.com/}{\textbf{Firebase}}} was used
+	\end{itemize*}
+	
+\end{itemize}
+
+
+
+% --------------- Education ---------------
+
+{\color{IFMediumGreen} \hrule}
+\vspace{-0.3em}
+{\color{IFDarkGreen}\section*{Education}}
+
+\begin{itemize}
+	\parskip=0.1em
+
+	\item 
+	\headerrow
+		{\textbf{Bachelor In Computer Science}}
+		{{\href{https://www.unitn.it/}{\textbf{UniTn, Trento}}}}
+	\\
+	\headerrow
+		{\emph{Sep 2018 -- Mar 2022}}
+		{\emph{}}
+% 	\begin{itemize*}
+% 	   % \setlength\itemsep{2pt}
+% 		\item {Algorithms, Data Structures, Complexity Analysis, Compiler Design, OOP, Networking, Operating Systems, Computer Architecture, C/Python.}
+% 	\end{itemize*}
+
+\end{itemize}
+
+
+
+% -------------------- Certifications ---------------------------
+
+%{\color{IFMediumGreen} \hrule}
+%\vspace{-0.3em}
+%{\color{IFDarkGreen}\section*{Certifications}}
+%
+%\begin{itemize}
+%	\parskip=0.1em
+%
+%	\item 
+%	\headerrow
+%		{\textbf{Certification 1}}
+%		{{\href{https://www.example.com/}{\textbf{Certification}}}}
+%	\\
+%	\headerrow
+%	    {\emph{\href{https://www.example.com/}{https://www.example.com/}}}
+%		{\emph{}}
+%	
+%	\item 
+%	\headerrow
+%		{\textbf{Certification 2}}
+%		{{\href{https://www.example.com/}{\textbf{Certification}}}}
+%	\\
+%	\headerrow
+%	    {\emph{\href{https://www.example.com/}{https://www.example.com/}}}
+%		{\emph{}}
+%
+%\end{itemize}
+
+
+
+% -------------------- Technical Skills---------------------------
+
+{\color{IFMediumGreen} \hrule}
+\vspace{-0.3em}
+{\color{IFDarkGreen}\section*{Technical Skills}}
+
+\begin{indentsection}{\parindent}
+\hyphenpenalty=1000
+\begin{description*}
+    Python, JavaScript, C++, Flask, React, Docker
+\end{description*}
+\end{indentsection}
+
+\end{document}
