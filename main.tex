@@ -1,5 +1,5 @@
 \documentclass[10pt,a4paper,hidelinks]{article}
-\usepackage[a4paper,margin=0.75in]{geometry}
+\usepackage[a4paper,margin=0.70in]{geometry}
 \usepackage{mdwlist}
 \usepackage{textcomp}
 \usepackage{tgpagella}
@@ -57,10 +57,10 @@
 }
 \end{center}
 
-\vspace{0.3em}
+%\vspace{0.3em}
 
 
-% --------------- Experience ---------------
+% -------------------- Experience --------------------
 
 {\color{IFMediumGreen} \hrule}
 \vspace{-0.3em}
@@ -71,28 +71,60 @@
 % \renewcommand\labelitemii{$\--$}
 
 \begin{itemize}
+    \setstretch{0.75}
     \setlength\itemsep{5pt}
 	\parskip=0.1em
+	
+	\item
+	\headerrow
+		{\textbf{Full-Stack Developer}}
+		{\textbf{\colorbox{IFLightGreen!30}{\href{https://www.greenvulcano.com/}{\textbf{GreenVulcano}}}{, Rome}}}
+	\\
+	\headerrow
+		{\emph{Dec 2021 -- Apr 2022}}
+		{\emph{}}
+	% TODO rewrite this
+	\begin{itemize*}
+	    \setlength\itemsep{2pt}
+		\item Developed {\href{https://effatta.it/}{\textbf{Effatta}}}, App in \textbf{React Native} to manage electronic receipt via {\href{https://www.agenziaentrate.gov.it/portale/web/english}{\textbf{The Revenue Agency}}}'s API
+		\item Developed \textbf{Cantico}, App in \textbf{React Native} to book theaters \& events
+	\end{itemize*}
+	
+	\item
+	\headerrow
+		{{\href{https://www.fis-ski.com/en/international-ski-federation/news-multimedia/news-2022/ski-race-genie-the-first-live-fan-engagement-app-in-wintersports}{\textbf{Project Engineer}}}}
+		{\textbf{\colorbox{IFLightGreen!30}{\href{https://www.onesporter.com/en}{\textbf{OneSporter}}}{, Tarvisio}}}
+	\\
+	\headerrow
+	    {\emph{Jun 2021 -- Mar 2022}}
+		{\emph{}}
+	\begin{itemize*}
+	    \setlength\itemsep{2pt}
+	    \item Won {\href{https://pressroom.unitn.it/alfresco/download/workspace/SpacesStore/a1ed3d31-491d-4f20-95b3-ba1fc2f0f45b/cs\%20Hackathon\%20UniSport.pdf}{\textbf{Winter Sports Hackathon 2021}}} hosted by {\href{https://www.unitn.it/}{\textbf{UniTn}}} as team of 4.
+	    \item Developed a game in the \textbf{Ionic} framework in order to play during live ski events.
+	    \item Partnered with {\href{https://www.fis-ski.com/}{\textbf{FIS}}} to bring the game to life, premiered in {\href{https://www.cortinaskiworldcup.com/D/472181/fis-ski-race-genie.php}{\textbf{Cortina 2022}}} \& {\href{https://www.fis-ski.com/en/international-ski-federation/news-multimedia/news-2022/fis-ski-race-genie-returns-to-the-world-cup-finals}{\textbf{Courchevel 2022}}}
+	\end{itemize*}
 
 	\item
 	\headerrow
-		{{\href{http://www.provinz.bz.it/politik-recht-aussenbeziehungen/europa/eu-foerderungen/efre-2014-2020.asp}{\textbf{FESR Project}}}}
+		{{\href{http://www.provinz.bz.it/politik-recht-aussenbeziehungen/europa/eu-foerderungen/efre-2014-2020.asp}{\textbf{Project Engineer}}}}
 		{\textbf{\colorbox{IFLightGreen!30}{\href{https://www.saidea.it/}{\textbf{Saidea}}}{, Trento}}}
 	\\
 	\headerrow
 		{\emph{Jan 2021 -- Apr 2021}}
 		{\emph{}}
-	% TODO rewrite this
 	\begin{itemize*}
 	    \setlength\itemsep{2pt}
-		\item Implemented a \textbf{Python} script in order to manage 'Tickets' on Antares (local company Database)
-		\item Coded a second script in \textbf{PHP} to get solar panels data out of an Excel and load relationships onto a local database (via API)
+		\item Implemented a \textbf{Python} script in order to manage 'Tickets' on Antares (company's Database)
+		\item Coded a second script in \textbf{PHP} to extract solar panels' data from an Excel sheet and load relationships onto a local database via API calls
 	\end{itemize*}
-
+	
+	\vspace{.1cm}
+	
 \end{itemize}
 
 
-% --------------- Projects ---------------
+% -------------------- Projects --------------------
 
 {\color{IFMediumGreen} \hrule}
 \vspace{-0.3em}
@@ -115,7 +147,7 @@
 	    \item The front-end was implemented in \textbf{Angular} while for the back-end Google's {\href{https://firebase.google.com/}{\textbf{Firebase}}} was used.
 	\end{itemize*}
 	
-	\vspace{.25cm}
+	\vspace{.1cm}
 	
 	\item
 	\headerrow
@@ -131,29 +163,12 @@
 	    \item Backend was realized in \textbf{PHP}, notably using {\href{https://github.com/PHPOffice/PhpSpreadsheet}{\textbf{PhpSpreadsheet}}}.
 	\end{itemize*}
 	
-	\vspace{.25cm}
-	
-	\item
-	\headerrow
-		{\href{https://pressroom.unitn.it/alfresco/download/workspace/SpacesStore/a1ed3d31-491d-4f20-95b3-ba1fc2f0f45b/cs\%20Hackathon\%20UniSport.pdf}{\textbf{Winter Sports Hackathon 2021}}}
-		{\textbf{\colorbox{IFLightGreen!30}{\href{https://www.unitn.it/}{\textbf{UniTn}}}}}
-	\\
-	\headerrow
-	    {\emph{Jun 2021 -- Jun 2021}}
-		{\emph{}}
-	\begin{itemize*}
-	    \setlength\itemsep{2pt}
-	    \item In a team of 4 we \textbf{won} the contest in which we had 36 hrs to develop a project given data from a sensor mounted on a skier's boot.
-	    \item Considering our previous experience and the limited amount of time we implemented the app with the \textbf{Ionic} framework.
-	\end{itemize*}
-	
-	\vspace{.25cm}
-
+	\vspace{.1cm}
 	
 \end{itemize}
 
 
-% -------------------- Technical Skills---------------------------
+% -------------------- Technical Skills --------------------
 
 {\color{IFMediumGreen} \hrule}
 \vspace{-0.3em}
@@ -162,16 +177,16 @@
 \begin{indentsection}{\parindent}
 \hyphenpenalty=1000
 \begin{flushleft}
-    \textbf{Strong}: Python, Angular, JavaScript, PHP
+    \textbf{Strong}: Python, Angular, React, JavaScript 
 \end{flushleft}
 \vspace{-1.0em}
 \begin{flushleft}
-    \textbf{Experienced}: ML, C++, Git, Flask, React, Node, SQL
+    \textbf{Experienced}: PHP, Git, C++, , Flask, Node, SQL
 \end{flushleft}
 \end{indentsection}
 
 
-% --------------- Education ---------------
+% -------------------- Education --------------------
 
 {\color{IFMediumGreen} \hrule}
 \vspace{-0.3em}
@@ -186,7 +201,7 @@
 		{\textbf{\colorbox{IFLightGreen!30}{\href{https://www.unitn.it/}{\textbf{UniTn}}}{, Trento}}}
 	\\
 	\headerrow
-		{\emph{Sep 2018 -- Mar 2022}}
+		{\emph{Sep 2019 -- Jul 2022}}
 		{\emph{}}
 % 	\begin{itemize*}
 % 	   % \setlength\itemsep{2pt}
@@ -196,7 +211,7 @@
 \end{itemize}
 
 
-% -------------------- Certifications ---------------------------
+% -------------------- Certifications --------------------
 
 %{\color{IFMediumGreen} \hrule}
 %\vspace{-0.3em}
@@ -226,7 +241,7 @@
 %\end{itemize}
 
 
-% -------------------- Languages ---------------------------
+% -------------------- Languages --------------------
 
 {\color{IFMediumGreen} \hrule}
 \vspace{-0.3em}
@@ -235,12 +250,12 @@
 \begin{indentsection}{\parindent}
 \hyphenpenalty=1000
 \begin{flushleft}
-    \textbf{Italian}, \textbf{English} (C1), \textbf{German} (school), \textbf{Chinese} (A1)
+    \textbf{Italian} (Native), \textbf{English} (C2),  \textbf{Chinese} (A2), \textbf{German} (School)
 \end{flushleft}
 \end{indentsection}
 
 
-% -------------------- Personal ---------------------------
+% -------------------- Personal --------------------
 
 {\color{IFMediumGreen} \hrule}
 \vspace{-0.3em}
@@ -249,7 +264,7 @@
 \begin{indentsection}{\parindent}
 \hyphenpenalty=1000
 \begin{flushleft}
-I am 22 years old, I love gymnastics and biking, super interested in Machine Learning and in the study of languages, currently improving my Chinese.
+I am 23 years old, I love gymnastics and biking, super interested in Machine Learning and in the study of languages, currently improving my Chinese.
 \end{flushleft}
 \end{indentsection}
 
