@@ -1,5 +1,5 @@
 \documentclass[10pt,a4paper,hidelinks]{article}
-\usepackage[a4paper,margin=0.70in]{geometry}
+\usepackage[a4paper,margin=0.65in]{geometry}
 \usepackage{mdwlist}
 \usepackage{textcomp}
 \usepackage{tgpagella}
@@ -8,6 +8,7 @@
 \usepackage{enumitem}
 \usepackage{fontawesome}
 \usepackage{xcolor}
+\usepackage{scrextend}
 
 % Font %
 \usepackage[utf8]{inputenc}
@@ -15,7 +16,7 @@
 \pagestyle{empty}
 
 % indent section style
-\newenvironment{indentsection}[1]%
+\newenvironment{indentsection}[1]%6
 {\begin{list}{}%
 	{\setlength{\leftmargin}{#1}}%
 	\item[]%
@@ -60,6 +61,45 @@
 %\vspace{0.3em}
 
 
+% -------------------- Education --------------------
+
+{\color{IFMediumGreen} \hrule}
+\vspace{-0.3em}
+{\color{IFDarkGreen}\section*{Education}}
+
+\begin{itemize}
+	\parskip=0.1em
+
+	\item 
+	\headerrow
+		{\textbf{Bachelor in Computer Science}}
+		{\textbf{\colorbox{IFLightGreen!30}{\href{https://www.unitn.it/}{\textbf{UniTn}}}{, Trento}}}
+	\\
+	\headerrow
+		{\emph{Sep 2019 -- Jul 2023}}
+		{\emph{}}
+
+        \item 
+	\headerrow
+		{\textbf{Diploma in Scientific High School}}
+		{\textbf{\colorbox{IFLightGreen!30}{\href{https://liceorosmini.eu/}{\textbf{Liceo Rosmini}}}{, Rovereto}}}
+	\\
+	\headerrow
+		{\emph{Sep 2013 -- Jun 2018}}
+		{\emph{}}
+        {
+        \begin{addmargin}{6pt}{}
+        \small{pathway: applied Sciences with \textbf{Computer Science}}
+        \end{addmargin}
+% 	\begin{itemize*}
+% 	   % \setlength\itemsep{2pt}
+% 		\item {Algorithms, Data Structures, Complexity Analysis, Compiler Design, OOP, Networking, Operating Systems, Computer Architecture, C/Python.}
+% 	\end{itemize*}
+
+\end{itemize}
+
+
+
 % -------------------- Experience --------------------
 
 {\color{IFMediumGreen} \hrule}
@@ -74,20 +114,34 @@
     \setstretch{0.75}
     \setlength\itemsep{5pt}
 	\parskip=0.1em
-	
+
+    \item
+	\headerrow
+		{\textbf{Software Engineer (Full-Stack \& AI)}}
+		{\textbf{\colorbox{IFLightGreen!30}{\href{https://legconsulenze.it/}{\textbf{LEG s.r.l.}}}{, Brescia}}}
+	\\
+	\headerrow
+		{\emph{Oct 2022 -- Present}}
+		{\emph{}}
+	\begin{itemize*}
+	    \setlength\itemsep{2pt}
+		\item Designed and developed {\href{https://app.laorange.it/}{\textbf{SpiritOrange}}}, an \textbf{Ionic} app that recommends tailored cocktails based on user preferences, including ongoing implementation of \textbf{NLP} analysis on the cocktails' ingredients, flavour profile, and serving style.
+		\item Developed {\href{https://backoffice.algorec.it/}{\textbf{Algorec}}} a credit platform that computes the profitability ranking of a property based on location, size, credit status and amenities. The platform uses \textbf{predictive modeling} to analyze real estate market trends and predict future profitability.
+	\end{itemize*}
+
 	\item
 	\headerrow
 		{\textbf{Full-Stack Developer}}
 		{\textbf{\colorbox{IFLightGreen!30}{\href{https://www.greenvulcano.com/}{\textbf{GreenVulcano}}}{, Rome}}}
 	\\
 	\headerrow
-		{\emph{Dec 2021 -- Apr 2022}}
+		{\emph{Dec 2021 -- Aug 2022}}
 		{\emph{}}
 	% TODO rewrite this
 	\begin{itemize*}
 	    \setlength\itemsep{2pt}
-		\item Developed {\href{https://effatta.it/}{\textbf{Effatta}}}, App in \textbf{React Native} to manage electronic receipt via {\href{https://www.agenziaentrate.gov.it/portale/web/english}{\textbf{The Revenue Agency}}}'s API
-		\item Developed \textbf{Cantico}, App in \textbf{React Native} to book theaters \& events
+		\item Developed {\href{https://effatta.it/}{\textbf{Effatta}}}, App in \textbf{React Native} that uses \textbf{Robotic Process Automation} to manage electronic receipt via {\href{https://www.agenziaentrate.gov.it/portale/web/english}{\textbf{The Revenue Agency}}}'s API
+		\item Developed {\href{https://www.facebook.com/CanticoVR360/}{\textbf{Cantico}}} , App in \textbf{React Native} to book theaters \& live-events
 	\end{itemize*}
 	
 	\item
@@ -100,9 +154,9 @@
 		{\emph{}}
 	\begin{itemize*}
 	    \setlength\itemsep{2pt}
-	    \item Won {\href{https://pressroom.unitn.it/alfresco/download/workspace/SpacesStore/a1ed3d31-491d-4f20-95b3-ba1fc2f0f45b/cs\%20Hackathon\%20UniSport.pdf}{\textbf{Winter Sports Hackathon 2021}}} hosted by {\href{https://www.unitn.it/}{\textbf{UniTn}}} as team of 4.
-	    \item Developed a game in the \textbf{Ionic} framework in order to play during live ski events.
-	    \item Partnered with {\href{https://www.fis-ski.com/}{\textbf{FIS}}} to bring the game to life, premiered in {\href{https://www.cortinaskiworldcup.com/D/472181/fis-ski-race-genie.php}{\textbf{Cortina 2022}}} \& {\href{https://www.fis-ski.com/en/international-ski-federation/news-multimedia/news-2022/fis-ski-race-genie-returns-to-the-world-cup-finals}{\textbf{Courchevel 2022}}}
+	    \item Won {\href{https://pressroom.unitn.it/alfresco/download/workspace/SpacesStore/a1ed3d31-491d-4f20-95b3-ba1fc2f0f45b/cs\%20Hackathon\%20UniSport.pdf}{\textbf{Winter Sports Hackathon 2021}}} as part of a 4-member team hosted by {\href{https://www.unitn.it/}{\textbf{UniTn}}}.
+	    \item Developed a game app in \textbf{Ionic} to play during live ski events.
+	    \item Partnered with {\href{https://www.fis-ski.com/}{\textbf{FIS}}} to lunch the game, premiered in {\href{https://www.cortinaskiworldcup.com/D/472181/fis-ski-race-genie.php}{\textbf{Cortina 2022}}} \& {\href{https://www.fis-ski.com/en/international-ski-federation/news-multimedia/news-2022/fis-ski-race-genie-returns-to-the-world-cup-finals}{\textbf{Courchevel 2022}}}
 	\end{itemize*}
 
 	\item
@@ -115,8 +169,8 @@
 		{\emph{}}
 	\begin{itemize*}
 	    \setlength\itemsep{2pt}
-		\item Implemented a \textbf{Python} script in order to manage 'Tickets' on Antares (company's Database)
-		\item Coded a second script in \textbf{PHP} to extract solar panels' data from an Excel sheet and load relationships onto a local database via API calls
+		\item Implemented a \textbf{Python} program to to manage 'Ticket' insertion on the company database (Antares).
+		\item Coded a \textbf{PHP} script to extract solar panel data from Excel and load relationships into a database.
 	\end{itemize*}
 	
 	\vspace{.1cm}
@@ -135,7 +189,7 @@
 
  	\item
 	\headerrow
-		{\textbf{FST App}}
+		{\textbf{FST}}
 		{\textbf{\colorbox{IFLightGreen!30}{\href{https://falconeriskiteam.net/}{\textbf{Falconeri Ski Team}}}}}
 	\\
 	\headerrow
@@ -143,73 +197,45 @@
 		{\emph{}}
 	\begin{itemize*}
 	    \setlength\itemsep{2pt}
-	    \item As freelancers a college partner and I developed a \textbf{Mobile Application} as well as a \textbf{Web App} for the purpose of managing a ski team, this was achieved through the  {\href{https://ionicframework.com/}{\textbf{Ionic}}} framework.
-	    \item The front-end was implemented in \textbf{Angular} while for the back-end Google's {\href{https://firebase.google.com/}{\textbf{Firebase}}} was used.
+	    \item As freelancers a college partner and I developed an \textbf{App} as well as a \textbf{Web App} for the purpose of managing a ski team, this was achieved through the  {\href{https://ionicframework.com/}{\textbf{Ionic}}} framework.
+	    \item The front-end was implemented in \textbf{Angular} while the back-end was powered by Google's {\href{https://firebase.google.com/}{\textbf{Firebase}}}.
 	\end{itemize*}
 	
 	\vspace{.1cm}
 	
 	\item
 	\headerrow
-		{\textbf{Covid-19 Finance Web App}}
-		{\textbf{\colorbox{IFLightGreen!30}{\href{https://www.manzana.it/finanza/login}{\textbf{ManzanaIori}}}}}
+            {{\href{https://www.manzana.it/finanza/login}{\textbf{Covid-19 Financial losses}}}}
+		{\textbf{\colorbox{IFLightGreen!30}{\href{https://www.manzana.it/}{\textbf{ManzanaIori}}}}}
 	\\
 	\headerrow
-	    {\emph{Feb 2020 -- Apr 2020}}
+	    {\emph{Feb 2020 -- May 2020}}
 		{\emph{}}
 	\begin{itemize*}
 	    \setlength\itemsep{2pt}
-	    \item WebApp to compute COVID-19 related financial losses, provided to the clients of an accountant studio. Data was given by the user, processed through Excel and shown via interactive charts.
-	    \item Backend was realized in \textbf{PHP}, notably using {\href{https://github.com/PHPOffice/PhpSpreadsheet}{\textbf{PhpSpreadsheet}}}.
+	    \item Developed a WebApp to compute COVID-19 related financial losses, provided to the clients of an accountant studio. Data was taken from the accountant database and processed using \textbf{time series forecasting}, notably using \textbf{ARIMA}.
+            \item The data would then be shown via interactive charts.
+	\end{itemize*}
+	
+	\vspace{.1cm}
+
+        \item
+	\headerrow
+            {{\href{https://github.com/TommasoManzana/ML-Galaxies-Classification-CNN/blob/main/I2ML_project_report_Tommaso_Manzana.pdf}{\textbf{Galaxies Classification CNN}}}}
+		{\textbf{\colorbox{IFLightGreen!30}{\href{https://www.unitn.it/}{\textbf{UniTn}}}}}
+	\\
+	\headerrow
+	    {\emph{Feb 2021 -- Jun 2021}}
+		{\emph{}}
+	\begin{itemize*}
+	    \setlength\itemsep{2pt}
+	    \item In the "Introduction to Machine Learning" university course I had to project an algorithm to classify images of galaxies. After using different approaches I settled with a \textbf{Convolutional NN} and \textbf{placed Top 20} among others in the final leaderboard.
+            \item Most notably I fine-tuned a \textbf{Res-net 50} neural network in order to achieve the best accuracy.
 	\end{itemize*}
 	
 	\vspace{.1cm}
 	
 \end{itemize}
-
-
-% -------------------- Technical Skills --------------------
-
-{\color{IFMediumGreen} \hrule}
-\vspace{-0.3em}
-{\color{IFDarkGreen}\section*{Technical Skills}}
-
-\begin{indentsection}{\parindent}
-\hyphenpenalty=1000
-\begin{flushleft}
-    \textbf{Strong}: Python, Angular, React, JavaScript 
-\end{flushleft}
-\vspace{-1.0em}
-\begin{flushleft}
-    \textbf{Experienced}: PHP, Git, C++, Flask, Node, SQL
-\end{flushleft}
-\end{indentsection}
-
-
-% -------------------- Education --------------------
-
-{\color{IFMediumGreen} \hrule}
-\vspace{-0.3em}
-{\color{IFDarkGreen}\section*{Education}}
-
-\begin{itemize}
-	\parskip=0.1em
-
-	\item 
-	\headerrow
-		{\textbf{Bachelor In Computer Science}}
-		{\textbf{\colorbox{IFLightGreen!30}{\href{https://www.unitn.it/}{\textbf{UniTn}}}{, Trento}}}
-	\\
-	\headerrow
-		{\emph{Sep 2019 -- Jul 2022}}
-		{\emph{}}
-% 	\begin{itemize*}
-% 	   % \setlength\itemsep{2pt}
-% 		\item {Algorithms, Data Structures, Complexity Analysis, Compiler Design, OOP, Networking, Operating Systems, Computer Architecture, C/Python.}
-% 	\end{itemize*}
-
-\end{itemize}
-
 
 % -------------------- Certifications --------------------
 
@@ -250,7 +276,25 @@
 \begin{indentsection}{\parindent}
 \hyphenpenalty=1000
 \begin{flushleft}
-    \textbf{Italian} (Native), \textbf{English} (C2),  \textbf{Chinese} (A2), \textbf{German} (School)
+    \textbf{Italian} (Native), \textbf{English} (C1),  \textbf{Chinese} (B1), \textbf{German} (School-level)
+\end{flushleft}
+\end{indentsection}
+
+
+% -------------------- Technical Skills --------------------
+
+{\color{IFMediumGreen} \hrule}
+\vspace{-0.3em}
+{\color{IFDarkGreen}\section*{Technical Skills}}
+
+\begin{indentsection}{\parindent}
+\hyphenpenalty=1000
+\begin{flushleft}
+   \textbf{Strong}: Python, PyTorch, TensorFlow, Angular, React, JavaScript, Node 
+\end{flushleft}
+\vspace{-1.0em}
+\begin{flushleft}
+   \textbf{Experienced}: PHP, NLTK, Spark, AWS, Git, SQL, C++, Flask
 \end{flushleft}
 \end{indentsection}
 
@@ -259,12 +303,22 @@
 
 {\color{IFMediumGreen} \hrule}
 \vspace{-0.3em}
-{\color{IFDarkGreen}\section*{Personal}}
+{\color{IFDarkGreen}\section*{Personal \& Extracurricular}}
 
 \begin{indentsection}{\parindent}
 \hyphenpenalty=1000
 \begin{flushleft}
-I am 23 years old, I love gymnastics and biking, super interested in Machine Learning and in the study of languages, currently improving my Chinese.
+At 24, I cultivate a wide range of interests that keep me engaged both mentally and physically. 
+
+\begin{itemize*}
+\setlength\itemsep{2pt}
+    \item I am particularly keen on \textbf{sports}, I was a gymnast for the most part of my life and have participated in the Under-14 national competition. I am now practicing both climbing and biking.
+    \item I am enthusiastic about \textbf{language learning} and I am currently striving to improve my proficiency in Chinese.
+    \item As a teenager, I had the invaluable opportunity to \textbf{travel extensively}. Having visited more than 20 countries helped me to appreciate all the distinct facets of different cultures. Especially during middle school, I travelled to the UK on several occasions to learn the English language.
+    \item Whilst not travelling I always endeavoured in \textbf{social activities} and contributed to my community, for more than 5 years I volunteered at local summer camps to entertain elementary school kids.
+    \item Professionally speaking, I aspire to become a Machine Learning engineer.
+\end{itemize*}
+
 \end{flushleft}
 \end{indentsection}
 
